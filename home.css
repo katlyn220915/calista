@@ -1,0 +1,44 @@
+.introduction {
+  text-align: center;
+  padding: 50px 0;
+  background: #e8f0fe;
+}
+
+.services,
+.portfolio,
+.testimonials,
+.appointment {
+  margin: 20px 0;
+}
+
+.service-items,
+.portfolio-items,
+.pricing-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-item,
+.pricing-item {
+  flex: 1 1 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.service-item img,
+.portfolio-items img,
+.pricing-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
