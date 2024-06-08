@@ -1,22 +1,152 @@
-.introduction {
-  text-align: center;
-  padding: 50px 0;
-  background: #e8f0fe;
+:root {
+  --primary-color: #9d8e77;
+  --color-tine: #d4c7b0;
+  --color-shade: #6c5b4c;
+  --color-contrast: #77869d;
+  --color-font-gray: #545454;
+  --color-font-general: #333;
 }
 
-.services,
-.portfolio,
-.testimonials,
-.appointment {
-  margin: 20px 0;
+.QRCode {
+  width: 15rem;
+  height: 15rem;
+  vertical-align: middle;
 }
 
-.service-items,
-.portfolio-items,
-.pricing-items {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.section-hero {
+  max-width: 150rem;
+  margin: 0 auto;
+
+  .container-hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-radius: 0.8rem;
+  }
+
+  .hero {
+    width: 50%;
+
+    .hero-brand-info {
+      margin-bottom: 2.5rem;
+
+      .brand-name {
+        color: var(--color-font-gray);
+        font-size: 5rem;
+        padding-bottom: 3.5rem;
+      }
+
+      .brand-info p {
+        color: var(--color-font-gray);
+        line-height: 2.2;
+      }
+    }
+
+    .hero-slogan {
+      margin-bottom: 4rem;
+
+      p {
+        line-height: 2.2;
+      }
+    }
+  }
+
+  .container-hero-img {
+    width: 50%;
+    box-shadow: 11px 11px 10px 0px rgba(0, 0, 0, 0.19);
+
+    .hero-img {
+      width: 100%;
+      border-radius: 0.8rem;
+      transition: 0.3s;
+      vertical-align: middle;
+    }
+  }
+}
+
+.section-services {
+  .section-title {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .service-items {
+    margin: 0 auto;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .service-item {
+      text-align: left;
+
+      .service-item-title {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        transform: translateX(-6rem);
+        background-color: var(--color-tine);
+        border-radius: 3rem;
+      }
+
+      .description {
+        font-size: 1.6rem;
+
+        .annotation {
+          color: #403f3f;
+          font-size: 1.5rem;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.section-portfolio {
+  .section-title {
+    margin-bottom: 4rem;
+  }
+
+  .portfolios {
+    .portfolio-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+
+      .portfolio-link {
+        display: block;
+        width: 30rem;
+        overflow: hidden;
+      }
+
+      .portfolio-img {
+        width: 100%;
+        vertical-align: middle;
+        border-radius: 0.8rem;
+        transition: 0.3s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .social-media {
+      max-width: 91.6rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 3rem 0;
+    }
+  }
 }
 
 .service-item,
@@ -26,19 +156,94 @@
   margin: 10px;
 }
 
-.service-item img,
-.portfolio-items img,
-.pricing-item img {
-  max-width: 100%;
-  height: auto;
+.section-testimonial {
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .testimonials {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .testimonials-gallery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+    .testimonials-img {
+      display: block;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
 }
 
-.social-media {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+.testimonials[data-animated="true"] {
+  overflow: hidden;
 }
 
-.social-media a {
-  margin: 0 10px;
+[data-animated="true"] .testimonials-gallery {
+  width: fit-content;
+  animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-50%);
+  }
+}
+
+.section-appointment {
+  margin: 20rem auto 20rem;
+
+  .block-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .qrcode {
+      width: fit-content;
+      padding: 1rem;
+      border: 2px solid #333;
+      border-radius: 1rem;
+      margin: 1rem 0 3rem 0;
+    }
+
+    .section-appointment-cta-btn {
+      display: inline-block;
+      padding: 1rem 7rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+      font-weight: 500;
+      background-color: var(--color-tine);
+      border-radius: 3rem;
+    }
+  }
+}
+
+.section-branch-information {
+  .section-title {
+    margin-bottom: 3rem;
+  }
+  .branch-locations {
+    display: flex;
+    gap: 2rem;
+
+    .contact-info {
+      margin-bottom: 3rem;
+      text-align: center;
+
+      .address-link {
+        text-decoration: underline;
+
+        &:hover span {
+          color: var(--color-contrast);
+        }
+      }
+    }
+  }
 }

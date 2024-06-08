@@ -4,364 +4,391 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="home.css" />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <nav class="navigation">
-          <img
-            src="./public/images/Calista-studio-logo.jpg"
-            alt="calista studio"
-            class="logo"
-          />
-          <ul class="navigation-list">
-            <li>
-              <a
-                href="#section-hero"
-                class="navigation-list-item"
-                data-section="hero"
-                id="link-hero"
-                >關於我們</a
-              >
-            </li>
-            <li>
-              <a
-                href="#section-services"
-                class="navigation-list-item"
-                data-section="services"
-                id="link-services"
-                >服務項目</a
-              >
-            </li>
-            <li>
-              <a
-                href="#section-portfolio"
-                class="navigation-list-item"
-                data-section="portfolio"
-                id="link-portfolio"
-                >作品集</a
-              >
-            </li>
-            <li>
-              <a
-                href="#section-testimonials"
-                class="navigation-list-item"
-                data-section="testimonials"
-                id="link-testimonials"
-                >顧客回饋</a
-              >
-            </li>
-            <!-- <li><a href="#" class="navigation-list-item">關於我們</a></li> -->
-            <!-- <li><a href="#" class="navigation-list-item">聯絡我們</a></li> -->
-            <li>
-              <a
-                href="#section-appointment"
-                class="navigation-list-item cta-btn"
-                data-section="appointment"
-                id="link-appointment"
-                >線上預約</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="header">
+      <nav class="navigation">
+        <img
+          src="./public/images/Calista-studio-logo.jpg"
+          alt="calista studio"
+          class="logo"
+        />
+        <ul class="navigation-list">
+          <li>
+            <a
+              href="#section-hero"
+              class="navigation-list-item"
+              data-section="hero"
+              id="link-hero"
+              >關於我們</a
+            >
+          </li>
+          <li>
+            <a
+              href="#section-services"
+              class="navigation-list-item"
+              data-section="services"
+              id="link-services"
+              >服務項目</a
+            >
+          </li>
+          <li>
+            <a
+              href="#section-portfolio"
+              class="navigation-list-item"
+              data-section="portfolio"
+              id="link-portfolio"
+              >作品集</a
+            >
+          </li>
+          <li>
+            <a
+              href="#section-testimonials"
+              class="navigation-list-item"
+              data-section="testimonials"
+              id="link-testimonials"
+              >顧客回饋</a
+            >
+          </li>
+          <li>
+            <a
+              href="#section-branches"
+              class="navigation-list-item"
+              data-section="branches"
+              id="link-branches"
+              >分店資訊</a
+            >
+          </li>
+          <!-- <li><a href="#" class="navigation-list-item">關於我們</a></li> -->
+          <!-- <li><a href="#" class="navigation-list-item">聯絡我們</a></li> -->
+          <li>
+            <a
+              href="#section-appointment"
+              class="navigation-list-item cta-btn"
+              data-section="appointment"
+              id="link-appointment"
+              >線上預約</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <main>
+    <main>
+      <div class="wrapper">
         <section class="section-hero" id="section-hero" data-section="hero">
           <div class="container-hero">
             <div class="hero">
               <div class="hero-brand-info">
                 <h1 class="brand-name">CALISTA STUDIO</h1>
-                <p class="estabilish-time">於2019年創立</p>
+                <div class="brand-info">
+                  <p class="estabilish-time">於2019年創立</p>
+                  <p>CALISTA名源自於拉丁，象徵「最美麗的女子」。</p>
+                </div>
               </div>
               <div class="hero-slogan">
-                <p>CALISTA名源自於拉丁，象徵「最美麗的女子」。</p>
-                <p>用心致力於每位顧客重拾美麗與自信，</p>
-                <p>注重顧客體驗感受及服務品質，追求細緻不求速度，</p>
-                <p>專業技術不斷革新與進步，持續進修跟上趨勢成長，</p>
+                <p>用心致力於每位顧客重拾美麗與自信。</p>
+                <p>注重顧客體驗感受及服務品質，追求細緻不求速度。</p>
+                <p>專業技術不斷革新與進步，持續進修跟上趨勢成長。</p>
                 <p>堅持好產品、好服務，真誠對待每一份信任。</p>
               </div>
               <button class="cta-btn">線上預約</button>
             </div>
             <div class="container-hero-img">
               <img
-                src="./public/images/demo.jpg"
+                src="./public/images/studio-sanzhi.jpg"
                 alt="demo image"
                 class="hero-img"
               />
             </div>
           </div>
         </section>
+      </div>
 
-        <section
-          class="section-services"
-          id="section-services"
-          data-section="services"
-        >
-          <h2 class="section-title">服務項目</h2>
-          <div class="service-items">
-            <div class="service-item">
+      <section
+        class="section-services container section-margin"
+        id="section-services"
+        data-section="services"
+      >
+        <h2 class="section-title">服務項目</h2>
+        <div class="service-items">
+          <div class="service-item">
+            <div class="service-item-title">
               <img
                 src="/public/images/eyebrow.png"
                 alt="icon-霧眉"
                 class="icon"
               />
               <h3>霧眉</h3>
-              <p class="description">
-                依照不同五官、毛流、骨骼、肌肉、膚色、膚質客製化眉型及調色，採用拋棄式針具，使用SGS合格認證植物性色乳以點狀方式在表皮層上色，做出自然漸層及霧感。高低眉、壓眼眉、毛量稀疏不均、濃密雜亂、每天花很多時間畫眉毛又畫不好的人都很適合施作唷！
-              </p>
             </div>
-            <div class="service-item">
-              <img src="/public/images/lips.png" alt="icon-霧唇" class="icon" />
-              <h3>霧唇</h3>
-              <p class="description">
-                每一個唇配色比例都不同，目的在於改善原生唇色，矯正唇色不均、烏唇、蒼白唇，效果通透輕薄，由肉裡透出自然粉嫩色，打造偽素顏自然好氣色，與擦口紅的效果是不一樣的。
+            <div class="description">
+              <p>
+                依照不同五官、毛流、骨骼、肌肉、膚色、膚質客製化眉型及調色。
               </p>
+              <p>採用最低皮創0.2mm拋棄式針具，使用SGS合格認證植物性色乳。</p>
+              <p>以點狀方式上色，做出自然漸層及霧感。</p>
+              <span class="annotation">
+                ※高低眉、壓眼眉、毛量稀疏不均、濃密雜亂、眉毛畫不好都很適合施作唷！
+              </span>
             </div>
-            <div class="service-item">
+          </div>
+          <div class="service-item">
+            <div class="service-item-title">
               <img
                 src="/public/images/thermometer.png"
-                alt="icon-采耳"
+                alt="icon-thermometer"
                 class="icon"
               />
               <h3>采耳</h3>
-              <p class="description">
-                耳道清潔及保養，體驗被掏耳朵的舒服感，過程中藉由孔雀羽毛刺激耳周面部迷走神經達到腦部放鬆，享受身心紓壓首選療程。
+            </div>
+            <div class="description">
+              <p>耳道清潔及保養，體驗被掏耳朵的舒服感。</p>
+              <p>
+                藉由孔雀羽毛刺激耳周面部迷走神經達到腦部放鬆，享受身心紓壓首選療程。
               </p>
+              <span class="annotation">
+                ※不敢自己掏耳、常耳癢、耳悶、耳痛建議來檢查耳道並清潔保養。
+              </span>
+              <span class="annotation">
+                不管乾耳、濕耳、油耳、男生、女生皆可施作，想要放鬆紓壓也很適合唷！
+              </span>
             </div>
           </div>
-        </section>
-
-        <section
-          class="section-portfolio"
-          id="section-portfolio"
-          data-section="portfolio"
-        >
-          <h2 class="section-title">作品集</h2>
-          <div class="portfolios">
-            <div class="portfolio-items">
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/eyebrow-porfolio-1.jpg"
-                  alt="霧眉作品1號"
-                  class="portfolio-img"
-                />
-              </a>
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/eyebrow-porfolio-2.jpg"
-                  alt="霧眉作品2號"
-                  class="portfolio-img"
-                />
-              </a>
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/eyebrow-porfolio-3.jpg"
-                  alt="霧眉作品3號"
-                  class="portfolio-img"
-                />
-              </a>
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/eyebrow-porfolio-4.jpg"
-                  alt="霧眉作品4號"
-                  class="portfolio-img"
-                />
-              </a>
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/lips-porfolio-1.jpg"
-                  alt="霧唇作品1號"
-                  class="portfolio-img"
-                />
-              </a>
-              <a href="" class="portfolio-link" target="_blank">
-                <img
-                  src="/public/images/lips-porfolio-2.jpg"
-                  alt="霧唇作品2號"
-                  class="portfolio-img"
-                />
-              </a>
+          <div class="service-item">
+            <div class="service-item-title">
+              <img
+                src="/public/images/laser.png"
+                alt="icon-采耳"
+                class="icon"
+              />
+              <h3>無創淡色</h3>
             </div>
-            <div class="social-media">
-              <p class="more-info">更多作品請訪問我們的社交媒體平台</p>
-              <a
-                href="https://www.facebook.com/profile.php?id=100064155510124&mibextid=LQQJ4d"
-                target="_blank"
-                ><img
-                  src="/public/images/facebook.png"
-                  alt="Facebook"
-                  class="icon"
-              /></a>
-              <a
-                href="https://instagram.com/calista__studio?igshid=MzRlODBiNWFlZA=="
-                target="_blank"
-                ><img
-                  src="/public/images/instagram.png"
-                  alt="Instagram"
-                  class="icon icon-instagram"
-              /></a>
+            <div class="description">
+              <p>將色素顆粒分解成細小分子，讓人體代謝排出進而達到淡色效果。</p>
+              <p>不剃毛、不流血、不結痂，當日可碰水，隔日可上妝。</p>
+              <span class="annotation">※適合眉毛紋繡後以下困擾者：</span>
+              <span class="annotation"> 眉型不滿意∕不對稱∕下垂∕太粗∕太深 </span>
+              <span class="annotation">
+                卡色（橘眉∕紅眉∕藍眉∕灰眉∕綠眉∕紫眉）
+              </span>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section
-          class="section-testimonial"
-          id="section-testimonials"
-          data-section="testimonials"
-        >
-          <h2 class="section-title">顧客回饋</h2>
-          <!-- 顧客回饋內容 -->
-          <div class="testimonials">
-            <div class="testimonials-gallery">
+      <section
+        class="section-portfolio container section-margin"
+        id="section-portfolio"
+        data-section="portfolio"
+      >
+        <h2 class="section-title">作品集</h2>
+        <div class="portfolios">
+          <div class="portfolio-items">
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-1.jpg"
-                alt="Testimonials 1"
-                class="testimonials-img"
+                src="/public/images/eyebrow-porfolio-1.jpg"
+                alt="霧眉作品1號"
+                class="portfolio-img"
               />
+            </a>
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-2.jpg"
-                alt="Testimonials 2"
-                class="testimonials-img"
+                src="/public/images/eyebrow-porfolio-2.jpg"
+                alt="霧眉作品2號"
+                class="portfolio-img"
               />
+            </a>
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-27.jpg"
-                alt="Testimonials 27"
-                class="testimonials-img"
+                src="/public/images/eyebrow-porfolio-3.jpg"
+                alt="霧眉作品3號"
+                class="portfolio-img"
               />
-
+            </a>
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-3.jpg"
-                alt="Testimonials 3"
-                class="testimonials-img"
+                src="/public/images/eyebrow-porfolio-4.jpg"
+                alt="霧眉作品4號"
+                class="portfolio-img"
               />
+            </a>
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-4.jpg"
-                alt="Testimonials 4"
-                class="testimonials-img"
+                src="/public/images/lips-porfolio-1.jpg"
+                alt="霧唇作品1號"
+                class="portfolio-img"
               />
-
+            </a>
+            <a href="" class="portfolio-link" target="_blank">
               <img
-                src="/public/images/testimonials/testimonials-6.jpg"
-                alt="Testimonials 6"
-                class="testimonials-img"
+                src="/public/images/lips-porfolio-2.jpg"
+                alt="霧唇作品2號"
+                class="portfolio-img"
               />
-
-              <img
-                src="/public/images/testimonials/testimonials-8.jpg"
-                alt="Testimonials 8"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-9.jpg"
-                alt="Testimonials 9"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-10.jpg"
-                alt="Testimonials 10"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-11.jpg"
-                alt="Testimonials 11"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-12.jpg"
-                alt="Testimonials 12"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-13.jpg"
-                alt="Testimonials 13"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-14.jpg"
-                alt="Testimonials 14"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-15.jpg"
-                alt="Testimonials 15"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-16.jpg"
-                alt="Testimonials 16"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-17.jpg"
-                alt="Testimonials 17"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-18.jpg"
-                alt="Testimonials 18"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-19.jpg"
-                alt="Testimonials 19"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-20.jpg"
-                alt="Testimonials 20"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-21.jpg"
-                alt="Testimonials 21"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-22.jpg"
-                alt="Testimonials 22"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-23.jpg"
-                alt="Testimonials 23"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-24.jpg"
-                alt="Testimonials 24"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-25.jpg"
-                alt="Testimonials 25"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-26.jpg"
-                alt="Testimonials 26"
-                class="testimonials-img"
-              />
-
-              <img
-                src="/public/images/testimonials/testimonials-5.jpg"
-                alt="Testimonials 5"
-                class="testimonials-img"
-              />
-              <img
-                src="/public/images/testimonials/testimonials-7.jpg"
-                alt="Testimonials 7"
-                class="testimonials-img"
-              />
-            </div>
+            </a>
           </div>
-          <!-- <div>
+          <div class="social-media">
+            <p class="more-info">更多作品請訪問我們的社交媒體平台</p>
+            <a
+              href="https://www.facebook.com/profile.php?id=100064155510124&mibextid=LQQJ4d"
+              target="_blank"
+              ><img
+                src="/public/images/facebook.png"
+                alt="Facebook"
+                class="icon"
+            /></a>
+            <a
+              href="https://instagram.com/calista__studio?igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              ><img
+                src="/public/images/instagram.png"
+                alt="Instagram"
+                class="icon icon-instagram"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-testimonial container section-margin"
+        id="section-testimonials"
+        data-section="testimonials"
+      >
+        <h2 class="section-title">顧客回饋</h2>
+        <!-- 顧客回饋內容 -->
+        <div class="testimonials">
+          <div class="testimonials-gallery">
+            <img
+              src="/public/images/testimonials/testimonials-1.jpg"
+              alt="Testimonials 1"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-2.jpg"
+              alt="Testimonials 2"
+              class="testimonials-img"
+            />
             <img
               src="/public/images/testimonials/testimonials-27.jpg"
               alt="Testimonials 27"
               class="testimonials-img"
             />
+
+            <img
+              src="/public/images/testimonials/testimonials-3.jpg"
+              alt="Testimonials 3"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-4.jpg"
+              alt="Testimonials 4"
+              class="testimonials-img"
+            />
+
+            <img
+              src="/public/images/testimonials/testimonials-6.jpg"
+              alt="Testimonials 6"
+              class="testimonials-img"
+            />
+
+            <img
+              src="/public/images/testimonials/testimonials-8.jpg"
+              alt="Testimonials 8"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-9.jpg"
+              alt="Testimonials 9"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-10.jpg"
+              alt="Testimonials 10"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-11.jpg"
+              alt="Testimonials 11"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-12.jpg"
+              alt="Testimonials 12"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-13.jpg"
+              alt="Testimonials 13"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-14.jpg"
+              alt="Testimonials 14"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-15.jpg"
+              alt="Testimonials 15"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-16.jpg"
+              alt="Testimonials 16"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-17.jpg"
+              alt="Testimonials 17"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-18.jpg"
+              alt="Testimonials 18"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-19.jpg"
+              alt="Testimonials 19"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-20.jpg"
+              alt="Testimonials 20"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-21.jpg"
+              alt="Testimonials 21"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-22.jpg"
+              alt="Testimonials 22"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-23.jpg"
+              alt="Testimonials 23"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-24.jpg"
+              alt="Testimonials 24"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-25.jpg"
+              alt="Testimonials 25"
+              class="testimonials-img"
+            />
+            <img
+              src="/public/images/testimonials/testimonials-26.jpg"
+              alt="Testimonials 26"
+              class="testimonials-img"
+            />
+
             <img
               src="/public/images/testimonials/testimonials-5.jpg"
               alt="Testimonials 5"
@@ -372,87 +399,115 @@
               alt="Testimonials 7"
               class="testimonials-img"
             />
-          </div> -->
-        </section>
-
-        <section
-          class="section-appointment"
-          id="section-appointment"
-          data-section="appointment"
-        >
-          <div class="block-cta">
-            <h3 class="title-tertiary">立即預約</h3>
-            <a href="https://lin.ee/422LiAKHG" target="_blank" class="cta-icon"
-              ><img src="/public/images/line.png" alt="Line-icon" class="icon"
-            /></a>
           </div>
-          <div class="block-pre-knowledge">
-            <h4>預約須知</h4>
-            <ul>
-              <li>
-                保障雙方及其他顧客權益，如欲更改/取消預約，請「提前」告知！
-              </li>
-              <li>預約當日請「準時」到達（若有其它狀況也請事先告知</li>
-              <li>
-                預約當日臨時取消，下次預約需先收取定金500元，無準時赴約無權請求返還。
-              </li>
-              <li>接受現金/匯款轉帳支付（無刷卡服務）</li>
-              <li>僅限預約者進入工作室（不得攜伴）</li>
-            </ul>
-          </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
 
-    <footer>
+      <section
+        class="section-branch-information container section-margin"
+        id="section-branches"
+        data-section="branches"
+      >
+        <h2 class="section-title">分店資訊</h2>
+        <div class="branch-locations">
+          <div class="branch">
+            <div class="contact-info">
+              <a
+                href="https://goo.gl/maps/gzdASiRrB46JTujWA"
+                target="_blank"
+                class="address-link"
+              >
+                <span class="branch">
+                  <img
+                    src="public/images/google-map.png"
+                    class="icon"
+                    alt="google-map-icon"
+                  />
+
+                  三重店
+                </span>
+                <span>新北市正義北路28巷30號1樓</span>
+              </a>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.145118999763!2d121.49408637647934!3d25.06307007779751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a91f5162e01b%3A0x6a68f06de73ab766!2zMjQx5paw5YyX5biC5LiJ6YeN5Y2A5q2j576p5YyX6LevMjjlt7czMOiZnw!5e0!3m2!1szh-TW!2stw!4v1717836560572!5m2!1szh-TW!2stw"
+              width="590"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="branch">
+            <div class="contact-info">
+              <a
+                href="https://goo.gl/maps/gzdASiRrB46JTujWA"
+                target="_blank"
+                class="address-link"
+              >
+                <span class="branch">
+                  <img
+                    src="public/images/google-map.png"
+                    class="icon"
+                    alt="google-map-icon"
+                  />
+                  三芝店</span
+                >
+                <span>新北市三芝區民生街32號2樓</span>
+              </a>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.4229079060574!2d121.50121277648417!3d25.256355277673002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442b6cd91369ec7%3A0x93e9596cee80ab98!2zMjUy5paw5YyX5biC5LiJ6Iqd5Y2A5rCR55Sf6KGXMzLomZ8!5e0!3m2!1szh-TW!2stw!4v1717836708606!5m2!1szh-TW!2stw"
+              width="590"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section-appointment container section-margin"
+        id="section-appointment"
+        data-section="appointment"
+      >
+        <div class="block-cta">
+          <h3 class="title-tertiary">預約 / 諮詢</h3>
+          <div class="qrcode">
+            <img
+              src="/public/images/line-QR.jpeg"
+              alt="Line QR code"
+              class="QRCode"
+            />
+          </div>
+          <a
+            href="https://lin.ee/422LiAKHG"
+            target="_blank"
+            class="section-appointment-cta-btn"
+          >
+            立即預約
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
       <div class="footer-info">
         <img
           src="public/images/calista-studio-rm-bg.png"
           alt="calista-studio Logo"
           class="logo"
         />
-        <div class="contact-info">
-          <div class="contact-info-branch">
-            <a
-              href="https://goo.gl/maps/gzdASiRrB46JTujWA"
-              target="_blank"
-              class="address-link"
-            >
-              <span class="branch">
-                <img
-                  src="public/images/google-map.png"
-                  class="icon"
-                  alt="google-map-icon"
-                />
-
-                三重店
-              </span>
-              <span>新北市正義北路28巷30號1樓</span>
-            </a>
-          </div>
-          <div class="contact-info-branch">
-            <a
-              href="https://goo.gl/maps/gzdASiRrB46JTujWA"
-              target="_blank"
-              class="address-link"
-            >
-              <span class="branch">
-                <img
-                  src="public/images/google-map.png"
-                  class="icon"
-                  alt="google-map-icon"
-                />
-                三芝店</span
-              >
-              <span>新北市三芝區民生街32號2樓</span>
-            </a>
-          </div>
-        </div>
         <div class="social-media">
-          <span>歡迎關注Calista Studio的社群</span>
+          <p class="social-media-text">Follow us</p>
           <a
             href="https://www.facebook.com/profile.php?id=100064155510124&mibextid=LQQJ4d"
             target="_blank"
+            class="social-media-icon"
             ><img
               src="/public/images/facebook.png"
               alt="facebook-icon"
@@ -461,12 +516,16 @@
           <a
             href="https://instagram.com/calista__studio?igshid=MzRlODBiNWFlZA=="
             target="_blank"
+            class="social-media-icon"
             ><img
               src="/public/images/instagram.png"
               alt="Instagram-icon"
               class="icon icon-instagram"
           /></a>
-          <a href="https://lin.ee/422LiAKHG" target="_blank"
+          <a
+            href="https://lin.ee/422LiAKHG"
+            target="_blank"
+            class="social-media-icon"
             ><img src="/public/images/line.png" alt="Line-icon" class="icon"
           /></a>
         </div>

@@ -1,0 +1,183 @@
+:root {
+  --primary-color: #9d8e77;
+  --color-tine: #d4c7b0;
+  --color-shade: #6c5b4c;
+  --color-contrast: #77869d;
+  --color-font-gray: #545454;
+  --color-font-general: #333;
+}
+
+*,
+*:after,
+*:before {
+  color: #333;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #343a40;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* SHARING STYLES*/
+
+.section-margin {
+  margin: 30rem auto 0;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-tertiary {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.icon {
+  width: 3.4rem;
+  height: 3.4rem;
+  vertical-align: middle;
+}
+
+.icon-instagram {
+  transform: scale(1.1);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navigation-list {
+    display: flex;
+    list-style: none;
+    gap: 0.8rem;
+
+    .navigation-list-item {
+      display: block;
+      padding: 0.5rem 1.5rem;
+      text-decoration: none;
+      transition: 0.3s;
+      border-radius: 0.8rem;
+
+      &:hover {
+        color: var(--color-shade);
+      }
+    }
+
+    .active-item {
+      transform: translateY(-0.8rem);
+      background-color: #d8d2c9;
+    }
+  }
+}
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.cta-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.wrapper {
+  background: linear-gradient(to left, var(--color-tine), #fff);
+  padding: 8rem 0;
+}
+
+.space-top-sm {
+  margin-top: 1rem;
+}
+
+.footer {
+  background: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+
+  .copyright {
+    padding: 5rem 0 0 0;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .social-media {
+      position: absolute;
+      left: 60%;
+
+      .social-media-text {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .social-media-icon:not(:last-child) {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .service-items,
+  .portfolio-items,
+  .pricing-items {
+    flex-direction: column;
+  }
+
+  .service-item,
+  .pricing-item {
+    flex: 1 1 100%;
+  }
+
+  .footer-info {
+    flex-direction: column;
+  }
+}
